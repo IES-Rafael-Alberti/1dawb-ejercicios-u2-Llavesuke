@@ -13,6 +13,7 @@ def division(num1:int,num2:int):
         return resultado
     
     else: 
+        print('Error')
         return 'Error'
 
 def main():
