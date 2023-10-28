@@ -1,5 +1,5 @@
 import pytest
-from src.ej2_10 import Ask_User, Clasify, Elements
+from src.condicionales.ej2_10 import Ask_User, Clasify, Elements
 
 def test_Ask_User(monkeypatch):
     monkeypatch.setattr('builtins.input', lambda _: 1)

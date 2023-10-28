@@ -1,5 +1,5 @@
 import pytest
-from src.ej2_04 import Pedirnumeros, par_impar
+from src.condicionales.ej2_04 import Pedirnumeros, par_impar
 
 def test_PedirNumeros(monkeypatch):
     monkeypatch.setattr('builtins.input', lambda _: '10')

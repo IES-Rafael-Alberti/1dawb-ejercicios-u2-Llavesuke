@@ -1,5 +1,5 @@
 import pytest
-from src.ej2_05 import ask_salary, ask_age, verify
+from src.condicionales.ej2_05 import ask_salary, ask_age, verify
 
 def test_ask_salary(monkeypatch):
     monkeypatch.setattr('builtins.input', lambda _: '1000')

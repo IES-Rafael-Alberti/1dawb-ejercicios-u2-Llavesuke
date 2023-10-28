@@ -1,5 +1,5 @@
 import pytest
-from src.ej2_07 import UserRent, SelectPercentage
+from src.condicionales.ej2_07 import UserRent, SelectPercentage
 
 def test_UserRent(monkeypatch):
     monkeypatch.setattr('builtins.input', lambda _: '10000')
