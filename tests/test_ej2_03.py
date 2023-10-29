@@ -1,5 +1,5 @@
 import pytest
-from src.condicionales.ej2_03 import division, PedirNumeros
+from src.ej2_03 import division, PedirNumeros
 
 def test_PedirNumeros(monkeypatch):
     inputs = iter(['10', '2'])

@@ -1,5 +1,5 @@
 import pytest
-from src.condicionales.ej2_02 import ask_password, compare_password
+from src.ej2_02 import ask_password, compare_password
 
 def test_ask_passwrd(monkeypatch):
     monkeypatch.setattr('builtins.input', lambda _: 'PERRITO')

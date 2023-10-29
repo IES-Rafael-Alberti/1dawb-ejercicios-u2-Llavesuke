@@ -1,5 +1,5 @@
 import pytest
-from src.condicionales.ej2_08 import Score, Level
+from src.ej2_08 import Score, Level
 
 def test_Score(monkeypatch):
     monkeypatch.setattr('builtins.input', lambda _: 0.2)

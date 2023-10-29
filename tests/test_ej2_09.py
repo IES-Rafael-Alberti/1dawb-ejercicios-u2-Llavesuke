@@ -1,5 +1,5 @@
 import pytest
-from src.condicionales.ej2_09 import AskAge, Clasify
+from src.ej2_09 import AskAge, Clasify
 
 def test_AskAge(monkeypatch):
     monkeypatch.setattr('builtins.input', lambda _: 12)

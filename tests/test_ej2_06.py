@@ -1,5 +1,5 @@
 import pytest
-from src.condicionales.ej2_06 import AskName, AskSex, AssignGroup
+from src.ej2_06 import AskName, AskSex, AssignGroup
 
 def test_AskName(monkeypatch):
     monkeypatch.setattr('builtins.input', lambda _: 'Anita')
