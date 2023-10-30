@@ -17,15 +17,15 @@ def Elements(clasification):
 
             answer = int(input(f'Ingredientes vegetarianos: {joinedList} -> '))
 
-            list = list[answer-1].split(' ')
+            ingredient = list[answer-1].split(' ')
 
-            return list[0].lower()
+            return ingredient[0].lower()
 
         case 'no vegetariana':
             list = ['Peperoni (1)', 'Jamon (2)', 'Salmon (3)']
             joinedList= ','.join(list)
 
-            answer = int(input(f'Ingredientes vegetarianos: {joinedList} -> '))
+            answer = int(input(f'Ingredientes no vegetarianos: {joinedList} -> '))
 
             list = list[answer-1].split(' ')
 

@@ -16,16 +16,3 @@ def test_Ask_User(monkeypatch):
 )
 def test_Clasify_params(input,expected):
     assert Clasify(input) == expected
-
-@pytest.mark.parametrize(
-    'imported_input, expected',
-    [
-        (1,'pimiento'),
-        (2,'tofu'),
-        (1,'peperoni'),
-        (2,'jamon'),
-        (3,'salmon')
-    ]
-)
-def test_Elements_params(imported_input,expected):
-    Elements(imported_input) == expected

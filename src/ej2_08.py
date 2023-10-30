@@ -9,12 +9,21 @@ def Level(score):
         return 'aceptable'
     elif score >= 0.6:
         return 'meritorio'
+    else:
+        return 'Fallaste'
+    
+def Earnings(score):
+    return 2400*score
 
 def main():
     mark = Score()
     level= Level(mark)
+    score = int(Earnings(mark))
 
-    print(f'El rendimiento del trabajador es {level} y recibira {int(2400*mark)} euros')
+    if Level(mark) == 'Fallaste':
+        print(level)
+    else:
+        print(f'El rendimiento del trabajador es {level} y recibira {score} euros')
 
 if __name__ == '__main__':
     main()
