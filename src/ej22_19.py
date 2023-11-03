@@ -15,18 +15,27 @@ def Selection():
     
     return entrada
 
-def menu(entrada):
-    match entrada:
-        case 1:
-            print('Has elegido la opción 1')
-        case 2:
-            print('Has elegido la opcion 2')
-        case 3:
-            return 'Adios'
+def menu():
+    lista = ''
+    entrada = None
+
+    while entrada != 3 or entrada is None:
+        entrada = Selection()
+        if entrada == 1:
+            nota = input('Introduce una nota -> ') + '\n'
+            lista += nota
+
+        if entrada == 2:
+            print('\n'+lista)
+
+        if entrada == 3:
+            print('Adios')
+            return 3
 
 def main():
-   entrada = Selection()
-   menu(entrada)
+
+
+    menu()
 
 
 if __name__ == "__main__":
