@@ -1,7 +1,7 @@
 import pytest
-from src.ej22_1 import User_Input, Input_Loop
+from src.ej22_1 import PedirNumeros, Input_Loop
 
 def test_User_Input(monkeypatch):
     monkeypatch.setattr('builtins.input', lambda _: 'Perrazoboss')
-    result = User_Input()
+    result = PedirNumeros()
     assert result == 'Perrazoboss'

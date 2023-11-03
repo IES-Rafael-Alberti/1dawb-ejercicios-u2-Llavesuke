@@ -1,5 +1,5 @@
 
-def User_Input():
+def PedirNumeros():
     return input('Introduce una palabra -> ')
 
 def Input_Loop(word):
@@ -9,7 +9,7 @@ def Input_Loop(word):
             print(f'{word}\n')
 
 def main():
-    word = User_Input()
+    word = PedirNumeros()
     Input_Loop(word)
 
 if __name__ == "__main__":

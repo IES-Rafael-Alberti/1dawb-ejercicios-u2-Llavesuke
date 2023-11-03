@@ -3,6 +3,7 @@ def Pedirnumeros():
     numero = int(entrada)
     
     return numero
+
 def par_impar(numero:int):
     if numero%2 == 0:
         return True
