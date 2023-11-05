@@ -1,12 +1,20 @@
-from ej2_04 import Pedirnumeros
+def Pedirnumeros():
+    entrada = input('Numero -> ')
+    numero = int(entrada)
+    
+    return numero
+
 
 def Piramide(numero):
+    lista = ''
     for i in range(1, numero+1):
-        print('*'*i)
+        lista += str('*'*i+'\n')
+    
+    return lista
 
 def main():
     numero = Pedirnumeros()
-    Piramide(numero)
+    print(Piramide(numero))
 
 if __name__ == "__main__":
     main()

@@ -1,15 +1,24 @@
-from ej2_09 import AskAge
+
+def AskAge():
+    return int(input('Edad -> '))
 
 def Age_Sucesion(age):
-    for i in range (0,age+1):
-        print(i, end = ',')
-        if i == age:
-            print(f'{i}\n')
+    lista = ''
 
+    for i in range (0,age+1):
+
+        if i < age:
+            i_comma = str(i) + ','
+            lista += i_comma
+
+        if i == age:
+            lista += str(i)
+
+    return lista
 
 def main():
     age = AskAge()
-    Age_Sucesion(age)
+    print(Age_Sucesion(age))
 
 if __name__ == "__main__":
     main()

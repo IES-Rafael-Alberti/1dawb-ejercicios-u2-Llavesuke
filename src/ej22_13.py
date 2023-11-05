@@ -1,4 +1,4 @@
-from ej22_1 import PedirNumeros
+from ej22_1 import User_input
 
 def eco(entrada):
     while entrada.lower() != 'salir':
@@ -8,7 +8,7 @@ def eco(entrada):
     print('Saliste del programa')
 
 def main():
-    entrada = PedirNumeros()
+    entrada = User_input()
     eco(entrada)
 
 if __name__ == "__main__":

@@ -7,11 +7,13 @@ def Digit_Sum(numero):
     for i in range(0,len(numero)):
         suma += int(numero[i])
 
-    print(f'\nLa suma de los digitos es {suma}')
+    return suma
 
 def main():
     numero = User_Input()
-    Digit_Sum(numero)
-
+    suma = Digit_Sum(numero)
+    
+    print(f'\nLa suma de los digitos es {suma}')
+    
 if __name__ == "__main__":
     main()

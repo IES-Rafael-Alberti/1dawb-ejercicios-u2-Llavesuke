@@ -1,4 +1,8 @@
-from ej2_04 import Pedirnumeros
+def Pedirnumeros():
+    entrada = input('Numero -> ')
+    numero = int(entrada)
+    
+    return numero
 
 def Primo(numero):
     for i in range (2,numero):
