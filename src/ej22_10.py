@@ -6,7 +6,9 @@ def Primo(numero):
             return False
         else:
             return True
-        
+    if numero == 1:
+        return True
+    
 def main():
     numero = Pedirnumeros()
     if Primo(numero):

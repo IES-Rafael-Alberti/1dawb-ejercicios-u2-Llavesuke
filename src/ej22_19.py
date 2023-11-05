@@ -21,16 +21,16 @@ def menu():
 
     while entrada != 3 or entrada is None:
         entrada = Selection()
-        if entrada == 1:
-            nota = input('Introduce una nota -> ') + '\n'
-            lista += nota
-
-        if entrada == 2:
-            print('\n'+lista)
-
-        if entrada == 3:
-            print('Adios')
-            return 3
+        
+        match entrada:
+            case 1:
+                nota = input('Introduce una nota -> ') + '\n'
+                lista += nota
+            case 2:
+             print('\n'+lista)
+            case 3:
+                print('Adios')
+                return 3
 
 def main():
 
